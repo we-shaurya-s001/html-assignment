@@ -4,23 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>window.tailwind.config = {
+      theme:{property:{
+        extends:{
+          fontFamily: {
+        sans:['Inter']
+          }
+        }}
+      }
+    }
+    </script>
   </head>
   <body class="relative bg-[#080823] min-h-screen overflow-x-hidden font-sans text-slate-200 antialised">
-    <div class="sticky top-0 z-50 border-b border-white/5 bg-[#080823]/80 background-blur">
+    <nav>
+    <div class="sticky top-0 z-50 border-b border-white/5 bg-[#080823]/80 background-blur-12">
         <div class="relative  mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <a href="#" class="relative z-10 flex items-center gap-3">
-                <span>Dimensions</span>
+              <img src="./nav-img.png" class="w-8 h-8 object-fit">
+                <span class="text-mg font-semibold">Dimensions</span>
             </a>
-            <a>
-                <span>ds</span>
-            </a>
+            <div class="absolute left-1/2 top-1/2 z-10  -translate-x-1/2 -translate-y-1/2 sm-block">
+                <div class="flex items-center gap-6 rounded-full border border-white/10 bg-[#080823] px-5 py-2 text-sm shadow-sm backdrop-blur-sm">
+                    <a href="#" class="transitions-colors hoverLtext-sky-200">About</a>
+                    <a href="#" class="transitions-colors hoverLtext-sky-200">Careers</a>
+                    <a href="#" class="transitions-colors hoverLtext-sky-200">Blog</a>
+                    <a href="#" class="transitions-colors hoverLtext-sky-200">Changelog</a>         
         </div>
-
-
+          
+        </div>
+        <div class="">
+          <a class=" border border-[#616A8C] shadow text-sm p-1 rounded-md bg-[#2B324E00] pointer-events-none inline-flex">Join waitlist</a>
+        </div>
     </div>
-    <div>
-        html
-    </div>
+  </nav>
+
+  <section>
+    hii
+  </section>
+ 
    
   </body>
 </html>
